@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Rollins.LandingPages.WebAPI.Helper" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Rollins.LandingPages.WebAPI.Helper" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Leads">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdditionalInfo_LeadAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdditionalInfo_LeadAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdditionalInfo_LeadAddressIsOwned" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AdditionalInfo_LeadCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdditionalInfo_LeadPostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdditionalInfo_LeadStateOrProvince" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CrmId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomField1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomField10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomField2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomField3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomField4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomField5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomField6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomField7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomField8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomField9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadAdditionalData" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadAddressIsOwned" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LeadCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadComments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadCompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadCreationDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LeadEmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadId" type="xs:long" />
+      <xs:element minOccurs="0" name="LeadIndustryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadJobTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadKeywords" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadOriginationData" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadPostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadPreferredContactMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadPrimaryPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadReferrerData" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadRequestedAppointmentDateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LeadRule" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadRuleId" type="xs:int" />
+      <xs:element minOccurs="0" name="LeadSecondaryPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadStateOrProvince" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadWantsSolicitations" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MarketingCampaignId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketingCampaignXmlSnapshot" nillable="true">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:any minOccurs="0" processContents="lax" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="PestsCsv" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceGroupId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceLinesCsv" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubmittedMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Timestamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="isSameAsServiceAddress" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Leads" nillable="true" type="tns:Leads" />
+</xs:schema>
